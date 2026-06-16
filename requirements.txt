@@ -1,0 +1,26 @@
+## Requirements
+
+Proyek ini dikembangkan menggunakan **Python 3.10+** dengan beberapa library utama untuk analisis data, visualisasi, dan machine learning.
+
+### Library yang Dibutuhkan
+
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+
+## Instalasi Library
+
+jalankan:
+
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install seaborn
+pip install scikit-learn
+
+
+Atau dalam satu perintah:
+
+pip install pandas numpy matplotlib seaborn scikit-learn

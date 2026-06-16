@@ -1,0 +1,143 @@
+=====================================================
+CARA PENGGUNAAN PROGRAM
+PREDIKSI BIAYA ASURANSI KESEHATAN
+=====================================================
+
+Deskripsi:
+Program ini digunakan untuk memprediksi biaya asuransi kesehatan berdasarkan data karakteristik individu menggunakan algoritma Machine Learning, yaitu KNN, Random Forest, dan AdaBoost.
+
+=====================================================
+1. PERSIAPAN
+=====================================================
+
+Pastikan Python versi 3.10 atau lebih baru telah terinstal pada komputer.
+
+Cek versi Python:
+
+python --version
+
+atau
+
+python3 --version
+
+=====================================================
+2. INSTALL LIBRARY YANG DIBUTUHKAN
+=====================================================
+
+Install seluruh library yang diperlukan dengan perintah:
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+Atau jika tersedia file requirements.txt:
+
+pip install -r requirements.txt
+
+=====================================================
+3. SIAPKAN DATASET
+=====================================================
+
+Pastikan file dataset berada pada folder proyek.
+
+Contoh:
+
+project/
+│
+├── insurance.csv
+├── main.py
+├── requirements.txt
+└── README.md
+
+Dataset yang digunakan harus memiliki kolom:
+
+- age
+- sex
+- bmi
+- children
+- smoker
+- region
+- charges
+
+=====================================================
+4. MENJALANKAN PROGRAM
+=====================================================
+
+Buka Terminal atau Command Prompt pada folder proyek.
+
+Jalankan perintah:
+
+python main.py
+
+atau
+
+python nama_file_program.py
+
+=====================================================
+5. PROSES YANG DILAKUKAN PROGRAM
+=====================================================
+
+Setelah dijalankan, program akan melakukan beberapa tahapan secara otomatis:
+
+1. Membaca dataset asuransi kesehatan.
+2. Menampilkan informasi dasar dataset.
+3. Melakukan pembersihan data.
+4. Mendeteksi dan menghapus outlier menggunakan metode IQR.
+5. Melakukan Exploratory Data Analysis (EDA).
+6. Mengubah data kategorikal menggunakan One-Hot Encoding.
+7. Membagi data menjadi data training dan testing.
+8. Melakukan standarisasi fitur numerik.
+9. Melatih model KNN.
+10. Melatih model Random Forest.
+11. Melatih model AdaBoost.
+12. Mengevaluasi performa model menggunakan metrik MSE.
+13. Membandingkan hasil ketiga model.
+14. Menampilkan hasil prediksi biaya asuransi kesehatan.
+
+=====================================================
+6. HASIL KELUARAN PROGRAM
+=====================================================
+
+Program akan menghasilkan:
+
+- Visualisasi distribusi data.
+- Visualisasi hubungan antar variabel.
+- Nilai evaluasi model.
+- Perbandingan performa KNN, Random Forest, dan AdaBoost.
+- Prediksi biaya asuransi kesehatan untuk data uji.
+
+=====================================================
+7. INTERPRETASI HASIL
+=====================================================
+
+Semakin kecil nilai Mean Squared Error (MSE), semakin baik performa model dalam melakukan prediksi.
+
+Berdasarkan hasil pengujian:
+
+- Random Forest memberikan performa terbaik pada data training.
+- AdaBoost memberikan performa terbaik pada data testing.
+- KNN menghasilkan prediksi yang sangat dekat dengan nilai aktual pada contoh pengujian tertentu.
+
+=====================================================
+8. TROUBLESHOOTING
+=====================================================
+
+Jika muncul error:
+
+ModuleNotFoundError
+
+Install library yang belum tersedia:
+
+pip install nama_library
+
+Contoh:
+
+pip install scikit-learn
+
+Jika dataset tidak ditemukan:
+
+FileNotFoundError
+
+Pastikan nama file dataset dan lokasi penyimpanannya sudah benar.
+
+=====================================================
+SELESAI
+=====================================================

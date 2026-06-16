@@ -1,7 +1,6 @@
 # Statistika-dan-Probabilitas-B_Nur-Aisyah_F55123042
 
-# Prediksi Biaya Asuransi Kesehatan Menggunakan KNN, Random Forest, dan AdaBoost
-
+# Prediksi Biaya Asuransi Kesehatan 
 ## Deskripsi Proyek
 
 Proyek ini bertujuan untuk membangun model Machine Learning yang dapat memprediksi biaya asuransi kesehatan seseorang berdasarkan karakteristik individu. Prediksi dilakukan menggunakan tiga algoritma regresi, yaitu:
